@@ -1,12 +1,13 @@
-﻿using DataAcces.Abstract;
+﻿using DataAccess.Abstract;
 using Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using Entities.DTOs;
 
-namespace DataAcces.Concrete.InMemory
+namespace DataAccess.Concrete.InMemory
 {
     public class InMemoryCarDal : ICarDal
     {
@@ -58,6 +59,11 @@ namespace DataAcces.Concrete.InMemory
             carToUpdate.ModelYear = car.ModelYear;
             carToUpdate.DailyPrice = car.DailyPrice;
             carToUpdate.Description = car.Description;
+        }
+
+        public List<CarDetailDto> GetCarDetails()
+        {
+            throw new NotImplementedException();
         }
     }
 }

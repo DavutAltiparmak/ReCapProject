@@ -10,7 +10,7 @@ using Core.DataAccess.EntityFramework;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfBrandDal : EfEntityRepositoryBase<Brand, ReCapProjectContext>,IBrandDal
+    public class EfColorDal : EfEntityRepositoryBase<Color, ReCapProjectContext>, IColorDal
     {
         
     }
